@@ -1,0 +1,1 @@
+performance: { hints: false }
