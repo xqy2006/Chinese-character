@@ -55,24 +55,24 @@ import axios from 'axios';
 import Utils from '@/utils.js'
 export default {
   data() {
-    var validQC = (rule, value, callback) => {
-      if (value) {
-        if (/[\u0020-\u4DFF]/g.test(value)) {
+    //var validQC = (rule, value, callback) => {
+      //if (value) {
+        //if (/[\u0020-\u4DFF]/g.test(value)) {
 		//this.$set(this.formData, "input",value.replace(/[^\u4e00-\u9fa5]/g, ''));
-	      callback(new Error("只能输入汉字"));
-		}
-        } else {
+	      //callback(new Error("只能输入汉字"));
+		//}
+        //} else {
         // 验证通过
-          callback();
-        }
-	  if (/[\u9FA6-\uFFFF]/g.test(value)) {
+          //callback();
+        //}
+	  //if (/[\u9FA6-\uFFFF]/g.test(value)) {
 		//this.$set(this.formData, "input",value.replace(/[^\u4e00-\u9fa5]/g, ''));
-          	callback(new Error("只能输入汉字"));
-		} else {
-		    callback();
-        callback();
-      }
-    };
+          	//callback(new Error("只能输入汉字"));
+		//} else {
+		    //callback();
+        //callback();
+      //}
+    //};
     return {
       formData: {},
       formConfig: {
@@ -88,12 +88,12 @@ export default {
         },
 	  labelPosition: "top",
         formDesc: {
-          time: {
-            type: "text",
-            label: "",
-            isOptions: false,
-            default: "text→music:一个可以自动根据歌词进行谱曲的AI"+'\r\n'+"在20首儿歌的数据集上训练了10K step得到的模型"
-          },
+          //time: {
+            //type: "text",
+            //label: "",
+            //isOptions: false,
+            //default: "text→music:一个可以自动根据歌词进行谱曲的AI"+'\r\n'+"在20首儿歌的数据集上训练了10K step得到的模型"
+          //},
           input: {
             type: "textarea",
             //label: "请输入要谱曲的歌词（只能是中文，无标点）",
