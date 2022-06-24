@@ -79,12 +79,12 @@ export default {
         isShowSubmitBtn: false,
         isShowBackBtn: false,
         order: [
-          "time",
+          //"time",
           "input",
           "mybutton",
         ],
         rules: {
-		input: [{ required: true, type: 'string', message: '必须填写歌词' },{validator:validQC,message: "请输入中文歌词，无标点"}]
+		//input: [{ required: true, type: 'string', message: '必须填写歌词' },{validator:validQC,message: "请输入中文歌词，无标点"}]
         },
 	  labelPosition: "top",
         formDesc: {
@@ -96,7 +96,8 @@ export default {
           },
           input: {
             type: "textarea",
-            label: "请输入要谱曲的歌词（只能是中文，无标点）",
+            //label: "请输入要谱曲的歌词（只能是中文，无标点）",
+	    label: "请输入需要去除非中文字符的字符串：",
           },
 	    mybutton: {
             type: "button",
