@@ -76,6 +76,8 @@ export default {
     return {
       formData: {},
       formConfig: {
+        isShowSubmitBtn: false,
+        isShowBackBtn: false,
         order: [
           "time",
           "input",
