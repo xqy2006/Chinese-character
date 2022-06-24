@@ -1,6 +1,6 @@
 module.exports = {
 	transpileDependencies: true,
-	publicPath:'./'
+	publicPath:'/Chinese-character/'
 }
 
 const TerserPlugin = require('terser-webpack-plugin')
